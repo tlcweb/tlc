@@ -7,7 +7,7 @@ body {
 }
 
 /* LOADER WRAPPE */
-.loader-wrapper {
+.loader-wrappe {
   @apply w-screen h-screen fixed top-0 left-0 bg-white z-50 flex justify-center items-center;
 }
 

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins";
+}
+
+/* LOADER WRAPPE */
+.loader-wrapper {
+  @apply w-screen h-screen fixed top-0 left-0 bg-white z-50 flex justify-center items-center;
+}
+
+/* NAVBAR */
+.navbar-fixed {
+  @apply fixed z-50;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+.search-form {
+  @apply py-[10px] lg:scale-0 -top-5 lg:top-0 left-1/2 -translate-x-1/2 bg-white w-screen flex justify-center lg:bg-transparent;
+}
+
+/* //   INDEX.HTML   // */
+
+/* HERO */
+.hover-image {
+  @apply hover:scale-125 transition duration-500;
+}
+
+/* BEST SELLER */
+.best-seller-contain {
+  @apply px-1 sm:px-2  w-1/2 lg:w-1/3 xl:w-1/4;
+}
+.best-seller-product {
+  @apply overflow-hidden rounded-lg border shadow-lg my-2 relative;
+}
+.best-seller-image {
+  @apply max-[400px]:aspect-[3/5] aspect-[4/5] sm:aspect-[5/3] lg:aspect-[5/4] h-full object-cover object-center -translate-y-3;
+}
+.best-seller-title {
+  @apply text-sm lg:text-lg font-semibold underline absolute bottom-0 left-1/2 -translate-x-1/2 mb-[15%] sm:mb-[7%] lg:mb-[10%];
+}
+
+/* CATEGORY */
+.category-contain {
+  @apply w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/6  p-1;
+}
+.category-product {
+  @apply inline-block overflow-hidden rounded-2xl xl:aspect-[3/4] shadow-md;
+}
+.category-title {
+  @apply text-sm lg:text-lg font-semibold  absolute bottom-0 mb-[15%] xl:mb-[20%] cursor-pointer;
+}
+
+/* //   PRODUCT.HTML   // */
+.scroll-bar {
+  scrollbar-width: thin;
+}

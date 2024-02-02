@@ -1,0 +1,8 @@
+LIQUIDY			: seberapa cepat cash kita bisa jadi aset dan balik lagi jadi aset.
+UPSIDE			: potensinys berapa
+INFLASION PROTECTION	: aman inflasi
+SCARCITY		: langkanya
+BARRIER TO ENTRY	: kemudahan
+DIVESIFICATION		: 
+REGULAR INCOME		: 
+TRANSPARANCY		: 

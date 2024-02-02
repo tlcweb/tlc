@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../src/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="">
+    <div class="flex items-center justify-center px-2 md:px-0 mt-10">
+      <div>
+        <p class="text-sm font-semibold text-black">404 error</p>
+        <h1 class="mt-3 text-2xl font-semibold text-gray-800 md:text-3xl">We can&#x27;t find that page</h1>
+        <p class="mt-4 text-gray-500">Sorry, the page you are looking for doesn&#x27;t exist or has been moved.</p>
+        <div class="mt-6 flex items-center space-x-3">
+          <a
+            href="../index.html"
+            type="a"
+            class="inline-flex items-center rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="mr-2"
+            >
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Go back
+          </a>
+          <!-- <button
+            type="button"
+            class="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Contact us
+          </button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="relative w-64 h-64 overflow-hidden border">
+      <img src="../img/best-seller/axel.jpg" alt="Your Image" class="object-cover transition-transform transform-gpu scale-125 delay-200 ease-out" id="zoomImage" />
+    </div> -->
+
+    <div id="product-image" class="w-full relative sm:flex">
+      <div class="image-side hidden sm:block w-1/5">
+        <img src="../img/best-seller/axel.jpg" alt="" class="thumb border" />
+        <img src="../img/best-seller/galen.jpg" alt="" class="thumb border" />
+        <img src="../img/best-seller/gibson.jpg" alt="" class="thumb border" />
+        <img src="../img/best-seller/gibson.jpg" alt="" class="thumb border" />
+      </div>
+      <div class="image-list flex overflow-hidden sm:w-4/5">
+        <img src="../img/best-seller/axel.jpg" alt="" class="main-image border h-fit transition-transform transform-gpu scale-125 delay-300 duration-500" id="zoomImage" />
+        <img src="../img/best-seller/galen.jpg" alt="" class="border sm:hidden" />
+        <img src="../img/best-seller/gibson.jpg" alt="" class="border sm:hidden" />
+      </div>
+
+      <button id="prev-image" class="slide-button absolute left-0 top-1/2 button-left -translate-y-1/2 ml-3 sm:hidden">
+        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
+        </svg>
+      </button>
+      <button id="next-image" class="slide-button absolute right-0 top-1/2 button-right -translate-y-1/2 mr-3 sm:hidden">
+        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+        </svg>
+      </button>
+    </div>
+
+    <script>
+      // const zoomImage = document.getElementById("zoomImage");
+
+      // zoomImage.addEventListener("mousemove", function (e) {
+      //   const { offsetX, offsetY, target } = e;
+      //   const { clientWidth, clientHeight } = target;
+
+      //   const xPercentage = (offsetX / clientWidth) * 100;
+      //   const yPercentage = (offsetY / clientHeight) * 100;
+
+      //   const transformOriginValue = `${xPercentage}% ${yPercentage}%`;
+      //   const transformValue = `scale(7)`;
+
+      //   zoomImage.style.transformOrigin = transformOriginValue;
+      //   zoomImage.style.transform = transformValue;
+      // });
+
+      // zoomImage.addEventListener("mouseleave", function () {
+      //   zoomImage.style.transformOrigin = "center center";
+      //   zoomImage.style.transform = "scale(1)";
+      //   // Move indicator off-screen on mouse leave
+      // });
+
+      const productImage = document.getElementById("product-image");
+      const mainImage = document.querySelector(".main-image");
+
+      productImage.addEventListener("click", function (e) {
+        // cek apakah yang di klik adalah thumb
+        if (e.target.className == "thumb") {
+          mainImage.src = e.target.src;
+        }
+      });
+    </script>
+  </body>
+</html>

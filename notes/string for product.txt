@@ -1,0 +1,17 @@
+string yang diperlukan
+
+
+judul produk
+	.product-title
+harga
+	.real-price .price	
+image product
+	.image side;  .image list;   .color-list
+link
+	tokopedia, tiktokshop, shopee, wa
+produk description
+	#product-description
+
+video
+	src video
+	
